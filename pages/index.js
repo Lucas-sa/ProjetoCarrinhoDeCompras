@@ -46,9 +46,6 @@ export default function Home() {
     var item = lista.filter((item) => item.id == id);
     item[0].quantidade = item[0].quantidade + 1 ;
     lista = item;
-    console.log(item[0]);
-    console.log(lista)
-
     let v = subtotal + item[0].valorUnidade;
     setSubtotal(v)
   }
@@ -58,9 +55,6 @@ export default function Home() {
     if(item[0].quantidade > 1) {
       item[0].quantidade = item[0].quantidade - 1 ;
       lista = item;
-      console.log(item[0]);
-      console.log(lista)
-
       let v = subtotal - item[0].valorUnidade;
       setSubtotal(v)
     }
