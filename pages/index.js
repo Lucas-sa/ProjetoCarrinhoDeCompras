@@ -171,7 +171,7 @@ export default function Home() {
               <div className="border-top border-white mt-3 mb-4"></div>
 
               <div className="col-7 col-md-4 col-lg-7 m-auto">
-              <a className="form-control btn btn-finalizar py-3 mt-1 shadow text-white"><strong>Finalizar compra</strong></a>
+              <a href='/finalizar' className="form-control btn btn-finalizar py-3 mt-1 shadow text-white"><strong>Finalizar compra</strong></a>
               </div>
               <div className="col-5 col-md-4 col-lg-5 m-auto text-center py-2 rounded ">
                 <strong>
