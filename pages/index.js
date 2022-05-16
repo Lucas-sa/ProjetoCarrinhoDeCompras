@@ -84,7 +84,7 @@ export default function Home() {
           <div className="lista col-lg-5 m-auto">
             <div className="row">
             {lista.map(lista => (
-              <div className="col-11 col-sm-9 col-md-7 col-lg-11 my-2 m-auto mb-3 color rounded text-white shadow p-2 pb-3 pl-1 animate__animated animate__lightSpeedInLeft" key={lista.id}>
+              <div className="col-12 col-sm-9 col-md-7 col-lg-11 my-2 m-auto mb-3 color rounded text-white shadow p-2 pb-3 pl-1 animate__animated animate__lightSpeedInLeft" key={lista.id}>
                 <div className="container-fluid">  
                   <div className="row">
                     <div className="col-3  mt-1">
