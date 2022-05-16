@@ -12,8 +12,8 @@ a {
 }
 
 .lista {
-  max-height: 51vh;
-  min-height: 51vh;
+  max-height: 53vh;
+  min-height: 53vh;
   overflow-y: scroll;
 }
 
