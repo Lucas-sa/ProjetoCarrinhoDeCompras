@@ -5,12 +5,12 @@ export default function Home() {
   let [lista, setLista] = useState([]);
   const [valfinal, setValfinal] = useState(0);
   const [subtotal, setSubtotal] = useState(0);
-  const [frete, setFrete] = useState(10);
+  const [frete, setFrete] = useState(0);
 
   useEffect(() => {
 
     async function carregarLista() {
-      fetch('https://tempapi.proj.me/api/Sm7.pfJ5W')
+      fetch('https://tempapi.proj.me/api/kYj20FGZD')
       .then( async (resp)=>resp.json())
       .then(data => {
         let res = [];
@@ -31,7 +31,7 @@ export default function Home() {
   useEffect(() => {
 
     async function caclculaValorFinal(){
-      if(subtotal >= 12){
+      if(subtotal >= 12 || subtotal === 0){
         setValfinal(subtotal)
         setFrete(0)
       } else {
@@ -97,7 +97,7 @@ export default function Home() {
 
                     <div className="col-9 mt-3">
                       <div className="">
-                        <strong>{lista.nome} - {lista.id}</strong>
+                        <strong>{lista.nome}</strong>
                       </div>
                     </div>
 
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {frete != 0 &&
+              {frete >= 0 &&
                 <div className="col-12 py-1">
                   <div className="row">
                     <div className="col-9">
@@ -162,7 +162,7 @@ export default function Home() {
                 </div>
               }
 
-              {frete == 0 &&
+              {subtotal >= 12 &&
                 <div className="col-12 p-1 color-alert text-center rounded shadow">
                   <strong>Parabéns você ganhou frete grátis</strong>
                 </div>
