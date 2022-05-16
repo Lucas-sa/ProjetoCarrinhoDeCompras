@@ -149,13 +149,13 @@ export default function Home() {
                 </div>
               </div>
 
-              {subtotal >= 0 &&
-                <div className="col-12 py-1">
-                  <div className="row">
+              {frete > 0 &&
+                <div className="col-12 mb-2">
+                  <div className='row'>
                     <div className="col-9">
                       <strong>Valor Frete: </strong><small><em>Acima de 12,00, frete fica grátis</em></small>
                     </div>
-                    <div className="col-3 text-end">
+                    <div className="col text-end">
                       R$ {frete},00
                     </div>
                   </div>
@@ -163,12 +163,12 @@ export default function Home() {
               }
 
               {subtotal >= 12 &&
-                <div className="col-12 p-1 color-alert text-center rounded shadow">
+                <div className="col-12 p-1 my-1 color-alert text-center rounded shadow">
                   <strong>Parabéns você ganhou frete grátis</strong>
                 </div>
               }
 
-              <div className="border-top border-white mt-3 mb-4"></div>
+              <div className="border-top border-white mt-4 mb-4"></div>
 
               <div className="col-7 col-md-4 col-lg-7 m-auto">
               <a href='finalizar' className="form-control btn btn-finalizar py-3 mt-1 shadow text-white"><strong>Finalizar compra</strong></a>
