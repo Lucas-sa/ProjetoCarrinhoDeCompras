@@ -1,0 +1,57 @@
+body {
+  background: rgb(248, 248, 248);
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.color {
+  background: #084298 ;
+}
+
+.lista {
+  max-height: 54vh;
+  min-height: 54vh;
+  overflow-y: scroll;
+}
+
+.curso {
+  cursor: pointer;
+}
+
+.color-alert {
+  color: #0d6efd;
+  background: #fff;
+}
+
+.btn-finalizar, .val-final {
+  background: #0d6efd;
+}
+
+.btn-finalizar:hover {
+  background: #0b59ce;
+}
+
+.barra {
+  border-radius: 0px 0px 30px 30px ;
+  box-shadow: 0px 5px 8px rgb(187, 182, 182);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .lista {
+    max-height: 86vh;
+    min-height: 86vh;
+    overflow-y: scroll;
+  }
+
+  #box-final-pai {
+    box-shadow: 10px 5px 5px rgb(187, 182, 182);
+    border-radius: 30px;
+  }
+  .box-final-filho {
+    padding: 50px;
+  }
+}
