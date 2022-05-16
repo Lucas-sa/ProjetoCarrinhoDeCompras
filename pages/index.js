@@ -143,6 +143,19 @@ export default function Home() {
                 </div>
               </div>
 
+              {lista.length == 0 && 
+                <div className="col-12 mb-2">
+                <div className='row'>
+                  <div className="col-9">
+                    <strong>Valor Frete: </strong>
+                  </div>
+                  <div className="col text-end">
+                    R$ {frete},00
+                  </div>
+                </div>
+              </div>
+              }
+
               {frete > 0 &&
                 <div className="col-12 mb-2">
                   <div className='row'>
