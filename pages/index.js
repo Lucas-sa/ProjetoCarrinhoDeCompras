@@ -31,7 +31,7 @@ export default function Home() {
   useEffect(() => {
 
     async function caclculaValorFinal(){
-      if(subtotal >= 12 || subtotal === 0){
+      if(subtotal >= 12 || subtotal == 0){
         setValfinal(subtotal)
         setFrete(0)
       } else {
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {frete >= 0 &&
+              {subtotal >= 0 &&
                 <div className="col-12 py-1">
                   <div className="row">
                     <div className="col-9">
