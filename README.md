@@ -10,7 +10,7 @@ yarn dev
 
 Abra [http://localhost:3000](http://localhost:3000) em seu navegador para ver o resultado.
 
-[Rotas da API] podem ser acessadas em [http://localhost:3000/api/produtos](http://localhost:3000/api/produtos). 
+Rota da API podem ser acessadas em [http://localhost:3000/api/produtos](http://localhost:3000/api/produtos). 
 
 
 ## Framework utilizado
