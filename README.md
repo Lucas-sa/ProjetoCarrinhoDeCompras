@@ -15,8 +15,6 @@ Rota da API podem ser acessadas em [http://localhost:3000/api/produtos](http://l
 
 ## Framework utilizado
 
-To learn more about Next.js, take a look at the following resources:
-
 - Next.js
 - Boostrap
 - Animate.css
