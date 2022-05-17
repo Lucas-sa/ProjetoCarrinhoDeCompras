@@ -23,4 +23,4 @@ To learn more about Next.js, take a look at the following resources:
 
 ## Deploy
 
-O projeto pode ser acessado em: [https://projeto-carrinho-de-compras.vercel.app/](projeto-carrinho-de-compras.vercel.app)
+O projeto pode ser acessado em: [https://projeto-carrinho-de-compras.vercel.app/](https://projeto-carrinho-de-compras.vercel.app/)
