@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
 
     async function carregarLista() {
-      fetch('https://tempapi.proj.me/api/kYj20FGZD')
+      fetch('./api/produtos')
       .then( async (resp)=>resp.json())
       .then(data => {
         let res = [];
@@ -145,15 +145,15 @@ export default function Home() {
 
               {lista.length == 0 && 
                 <div className="col-12 mb-2">
-                <div className='row'>
-                  <div className="col-9">
-                    <strong>Valor Frete: </strong>
-                  </div>
-                  <div className="col text-end">
-                    R$ {frete},00
+                  <div className='row'>
+                    <div className="col-9">
+                      <strong>Valor Frete: </strong>
+                    </div>
+                    <div className="col text-end">
+                      R$ {frete},00
+                    </div>
                   </div>
                 </div>
-              </div>
               }
 
               {frete > 0 &&
