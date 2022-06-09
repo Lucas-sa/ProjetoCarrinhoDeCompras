@@ -1,4 +1,4 @@
-Projeto Carrinho de compras
+# Projeto Carrinho de compras
 
 ## Getting Started
 
@@ -16,6 +16,7 @@ Rota da API podem ser acessadas em [http://localhost:3000/api/produtos](http://l
 ## Framework utilizado
 
 - Next.js
+- React.js
 - Boostrap
 - Animate.css
 
